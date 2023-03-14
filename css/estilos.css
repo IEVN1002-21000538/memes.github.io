@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+
+}
+
+body{
+    background-color: rgb(39, 5, 11);
+}
+
+header, footer{
+    background-color: pink;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 0px;
+    position: relative;
+}	
+
+#resultados{
+	height:600px;
+	background-color: plum;
+	font-size:20px;
+    position: relative;
+    /*display: box;
+    con estas dos lineas me permite que se peguen las dos secciones, ya que de lo contrario me mostraba una debajo de otra*/
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#izq{
+    background-color: #204956;
+    height: 600px;
+    width: 50%;
+    border: #204956 solid;
+    position: relative;
+    
+}
+#der{
+    background-color: antiquewhite;
+    height: 600px;
+    width: 50%;
+    border: #204956 solid;
+    display: flex;
+    /*align-items: center;
+    justify-content: center;*/
+    flex-direction: column;
+}
+#datos{
+    margin:  0 auto;
+    display: block;
+}
+p{
+    color: antiquewhite;
+}
+
+select{
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.tex{
+  margin: 10px 10px ;
+}
+input[type="text"]{
+    display: block;
+    margin: 0 auto;
+}
+input[type="button"]{
+    display: block;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+
+#imagenes{
+    display: flex;
+    justify-content: center;
+}
+#cambios{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.memingo{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+#boton{
+    height: 30px;
+    width: 100px;
+    background-color: #204956;
+    color: antiquewhite;
+}
+footer{
+    background-color: #204956;
+}
+#ejtxt{
+    position: absolute;
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Creador de memes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Noto+Sans+Bassa+Vah&family=Noto+Sans+JP:wght@100&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+		<h1>¡Javascript!</h1>
+	</header>
+    <section id="resultados">  
+     <!--CReando apartado de seleccion de mmemes-->
+     <div id="izq">
+       <section id="datos">
+        <select name="tema" id="tema">
+            <option value="perros">Perros</option>
+            <option value="gatos">Gatos</option>
+            <option value="personas">Personas</option>
+        </select>
+        
+        <section id="inputs">
+            <input type="text" id="mem" placeholder="Ingrese el texto">
+            
+            
+        </section>
+       </section>
+       
+       <section id="imagenes">
+        <img src="image/perro1.jpg" id="img1" alt="" srcset="" class="memingo" height="130px" onclick="cambio1()">
+        <img src="image/perro2.jpg" id="img2" alt="" srcset="" class="memingo" height="130px" onclick="cambio2()">
+        <img src="image/perro3.jpg" id="img3" alt="" srcset="" class="memingo" height="130px" onclick="cambio3()">
+       </section>
+
+       
+
+       <!--Tipo de texto-->
+       <br>
+       <p>Tipografía:</p>
+       <section id="tipo">
+        <select name="tipotxt" id="tipotxt" class="tex">
+            <option value="golos">Golos</option>
+            <option value="bassa">Bassa</option>
+            <option value="shantel">Shantel</option>
+            <option value="jp">Jp</option>
+        </select>
+     </section>
+     <br>
+     <p>Color Fuente:</p>
+     <section id="color">
+        <select name="colortxt" id="colortxt" class="tex">
+            <option value="Negro">Negro</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Amarillo">Amarillo</option>
+        </select>
+     </section>
+     <br>
+     <p>Tamaño Texto:</p>
+     <section id="tamanio">
+        <select name="tamaniotxt" id="tamaniotxt" class="tex">
+            <option value="ch">Chico</option>
+            <option value="m">Mediano</option>
+            <option value="g" selected>Grande</option>
+           
+        </select>
+     </section>
+     </div>
+       <!--Meme final-->
+     <div id="der">
+       <section id="cambios">
+        <section id="ejtxt">Texto de ejemplo</section>
+        
+        <img id="grande" src="image/meme.png" height="300px">
+        </section>
+
+        <br>
+        <input type="button" id="boton" value="Crear" onclick="otrotxt()">
+     </div>
+     
+    </section>
+
+    <footer>D A N D </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
